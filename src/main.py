@@ -41,7 +41,7 @@ def run_vton():
     if final_data:
         with open(FINAL_OUTPUT, "wb") as f:
             f.write(final_data)
-        print(f"Saved final output to {FINAL_OUTPUT}")
+        print(f"Saved final output into virtual_tryon_output/final_tryon.png")
     else:
         print("No valid output generated.")
 
