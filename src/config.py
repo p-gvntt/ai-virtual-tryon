@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 
 # Base directories
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -11,7 +12,6 @@ OUTPUT_DIR = os.path.join(DATA_DIR, "virtual_tryon_output")
 FINAL_OUTPUT = os.path.join(OUTPUT_DIR, "final_tryon.png")
 
 # Environment
-from dotenv import load_dotenv
 load_dotenv(os.path.join(BASE_DIR, ".env"))
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
